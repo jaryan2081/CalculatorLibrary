@@ -16,6 +16,7 @@ jobs:
           command: |
             python -m venv venv
             . venv/bin/activate
+            python.exe -m pip install --upgrade pip
             pip install -r requirements.txt
       # Step 3: run linter and tests
       - run:
